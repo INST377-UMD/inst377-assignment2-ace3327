@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dogs</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://unpkg.com/simple-slider@1.0.0/dist/simple-slider.min.js"></script>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="carousel">
+        <div id="dogCarousel" data-simple-slider style="width: 612px; height: 612px;"></div>
+      </section>      
+
+    <section>
+      <h2>Dog Breeds</h2>
+      <div id="breedButtons" class="button-29"></div>
+    </section>
+
+    <section id="breedInfo" class="breed-info" style="display:none;"></section>
+  </main>
+
+  <div id="audio-controls" class="audio-div">
+    <h3>Voice Navigation</h3>
+    <ul>
+      <li>Say "Hello" → Alert "Hello World"</li>
+      <li>Say "Change the color to red" → Change background</li>
+      <li>Say "Navigate to home" → Go to Home page</li>
+      <li>Say "Load Dog Breed bulldog" → Show info about Bulldog</li>
+    </ul>
+    <button onclick="startListening()">Turn On Audio</button>
+    <button onclick="stopListening()">Turn Off Audio</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+  <script src="common.js"></script>
+  <script src="dogs.js"></script>
+  
+</body>
+</html>
